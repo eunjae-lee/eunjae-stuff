@@ -52,12 +52,8 @@
       <div
         class="w-full flex-grow text-center self-center flex justify-center flex-col space-y-4"
       >
-        <p class="text-orange-100 font-title leading-snug">
-          Deploy to Vercel from Sanity Studio
-        </p>
-        <p class="text-orange-100 font-subtitle">
-          Configure your Sanity studio to trigger a deploy to Vercel
-        </p>
+        <p id="title" class="text-orange-100 font-title leading-snug"></p>
+        <p id="description" class="text-orange-100 font-subtitle"></p>
       </div>
       <div class="mt-8 mb-4 flex-none flex flex-row">
         <img
@@ -70,4 +66,10 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    const params = new URLSearchParams(window.location.search);
+    ["title", "description"].forEach((key) => {
+      document.getElementById(key).innerText = params.get(key);
+    });
+  </script>
 </html>
