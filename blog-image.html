@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #app {
+        width: 1200px;
+        height: 628px;
+        overflow: hidden;
+      }
+
+      #box {
+        width: 1200px;
+        height: 628px;
+      }
+
+      .font-title {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+      }
+
+      .font-subtitle {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+      }
+
+      .font-name {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 2.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app" class="flex bg-orange-800 flex flex-col px-24 py-8">
+      <div
+        class="w-full flex-grow text-center self-center flex justify-center flex-col space-y-4"
+      >
+        <p class="text-orange-100 font-title leading-snug">
+          Deploy to Vercel from Sanity Studio
+        </p>
+        <p class="text-orange-100 font-subtitle">
+          Configure your Sanity studio to trigger a deploy to Vercel
+        </p>
+      </div>
+      <div class="mt-8 mb-4 flex-none flex flex-row">
+        <img
+          src="https://eunjae-stuff.vercel.app/images/profile/profile_face.jpg"
+          class="w-24 h-24 rounded-full"
+        />
+        <div class="ml-8 flex self-center flex">
+          <p class="text-orange-100 font-name">Eunjae Lee</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
