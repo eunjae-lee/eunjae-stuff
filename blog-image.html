@@ -72,6 +72,8 @@
     ["title", "description"].forEach((key) => {
       document.getElementById(key).innerText = params.get(key);
     });
-    window.done = true;
+    setTimeout(() => {
+      window.done = true;
+    }, 200);
   </script>
 </html>
