@@ -25,6 +25,6 @@ export default (req, res) => {
       res.json({ success: true });
     })
     .catch((err) => {
-      res.json({ success: false, err });
+      res.json({ err });
     });
 };
