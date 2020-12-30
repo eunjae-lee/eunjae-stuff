@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "url-metadata": "^2.4.5"
   }
 }
